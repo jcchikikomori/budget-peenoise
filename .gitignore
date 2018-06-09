@@ -1,6 +1,7 @@
 node_modules
-<<<<<<< HEAD
 .sass-cache
-=======
-bower_components
->>>>>>> master
+.idea/budget-peenoise.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
