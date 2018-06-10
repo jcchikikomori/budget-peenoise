@@ -113,3 +113,9 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+gulp.task('live', ['css', 'js', 'browserSync'], function() {
+  gulp.watch('./public/scss/*.scss', ['css']);
+  gulp.watch('./public/js/*.js', ['js']);
+  gulp.watch('./public/*.html', browserSync.reload);
+});
