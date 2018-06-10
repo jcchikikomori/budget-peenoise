@@ -114,8 +114,17 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./*.html', browserSync.reload);
 });
 
+// LIVE/SERVE
 gulp.task('live', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./public/scss/*.scss', ['css']);
   gulp.watch('./public/js/*.js', ['js']);
   gulp.watch('./public/*.html', browserSync.reload);
 });
+
+// gulp.task('serve', function() {
+//   connect.server({
+//     root: [your_project_path],
+//     port: process.env.PORT || 5000, // localhost:5000
+//     livereload: false
+//   });
+// });
